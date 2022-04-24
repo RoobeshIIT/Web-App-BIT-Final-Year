@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/music-types.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>MUSICS</title>
+</head>
+
+<body>
+
+    <img src="../img/logo.jpeg"  alt="image" class="logo">
+    <h1 class="hHomepage">Musix AMP</h1>
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a class="aLink" href="HomePage.html">Home</a></li>
+                <li><a class="aLink" href="cart.html">Product</a></li>
+                <li><a class="aLink" href="instruction.html">Quiz</a></li>
+                <li><a class="aLink" href="site-map.html">Site Map</a></li>
+                <li><a class="aLink" href="queryForm.html">Query</a></li>
+                <li><a class="aLink" href="Student_Profiles.html">About Us</a></li>
+                <li><a class="aLink" href="tracks.html"> Songs </a></li>
+            </ul>
+            <br>
+            <br>
+        </nav>
+    </div>
+
+    <div class="header">
+        <h1 class="header-title-top">Musix AMP </h1>
+    </div>
+
+    <div class="columns group main-content">
+        <div class="column is-6">
+            <h3 class="header-title">Types of Music </h3>
+            <div class="cards">
+                <div class="card" onmouseover="jazzfunc()">
+                    <img class="card-img" src="../img/jazz.png" alt="Avatar">
+                    <div class="container">
+                        <h2><b>Jazz</b></h2>
+                    </div>
+                </div>
+                <div class="card" onmouseover="hiphopfunc()">
+                    <img class="card-img" src="../img/hip hop.jpeg" alt="Avatar">
+                    <div class="container">
+                        <h2><b>Hip Hop</b></h2>
+                    </div>
+                </div>
+                <div class="card" onmouseover="metalfunc()">
+                    <img class="card-img" src="../img/metal.jpeg" alt="Avatar">
+                    <div class="container">
+                        <h2><b>Metal</b></h2>
+                    </div>
+                </div>
+                <div class="card" onmouseover="reggaefunc()">
+                    <img class="card-img" src="../img/reggae.jpeg" alt="Avatar">
+                    <div class="container">
+                        <h2><b>Reggae</b></h2>
+                    </div>
+                </div>
+                <div class="card" onmouseover="rockfunc()">
+                    <img class="card-img" src="../img/rock.jpeg" alt="Avatar">
+                    <div class="container">
+                        <h2><b>Rock</b></h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="column is-3">
+            <h3 class="header-title">Change background Color </h3>
+            <div class="dropdown">
+                <span>Select Color Theme ></span>
+                <div class="dropdown-content">
+                    <button type="button" onclick="darkTheme()">Dark Theme</button>
+                    <button class="is-blue" type="button" onclick="lightTheme()">Light Theme</button>
+                </div>
+            </div>
+        </div>
+        <div class="column is-3">
+            <h3 class="header-title">Change Text Color </h3>
+            <div class="dropdown">
+                <span>Select Text Color Theme ></span>
+                <div class="dropdown-content">
+                    <button type="button" onclick="darkFont()">Dark Font</button>
+                    <button class="is-blue" type="button" onclick="lightFont()">Light Font</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns group descriptions">
+        <div class="column is-7">
+            <img id="desimg" class="des-image" src="../img/jazz.png">
+        </div>
+        <div class="column is-5">
+            <h1>Description</h1>
+            <div class="text-content">
+                <p id="destext">
+                    reggae, style of popular music that originated in Jamaica in the late 1960s and quickly
+                    emerged as the dominant music. By the 1970s it had become an international style that was
+                    particularly popular in Britain, the United States, and Africa. It was widely perceived as
+                    a voice of the oppressed.According to an early definition in The Dictionary of Jamaican English
+                    (1980), reggae is based on ska, an earlier form of Jamaican popular music, and employs a heavy
+                    four-beat rhythm driven by drums, bass guitar, electric guitar, and a corrugated stick that is
+                    rubbed by a plain stick. (The drum and bass became the foundation of a new instrumental music,dub.)
+                    Another term for this distinctive guitar-playing effect, skengay, is identified with the sound of
+                    gunshots ricocheting in the streets of Kingston ghettos tellingly, skeng is defined as gun or
+                    ratchet
+                    knife. Thus reggae expressed the sounds and pressures of ghetto life.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="social-media">
+                <a href="https://www.facebook.com/bruno.max.7796"><img src="../img/bwfacebook.png" alt="facebook"></a>
+                <a href="#"><img src="../img/bwgmail.png" alt="email"></a>
+                <a href="https://www.instagram.com/_gajiii_/-gajaba"><img src="../img/bwinstagram.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/gajaba-senaratne-645036218"><img src="../img/bwlinkedin.png" alt="linkedin"></a>
+        </div>
+        <p class="cright">The Four O'Clock Mix<i class="far fa-copyright"></i> 2022</p>
+        <button class="btn" onclick="location.href='student04.html'">Editors</button>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

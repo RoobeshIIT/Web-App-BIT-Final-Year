@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Query Form</title>
+
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+    </head>
+    <body class="body">
+        <img src="../img/logo.jpeg" alt="logo" class="logo">
+        <h1 class="hHomepage">Musix AMP</h1>
+        <div class = "navbarBorder">
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a class="aLink" href="HomePage.html">Home</a></li>
+                        <li><a class="aLink" href="cart.html">Product</a></li>
+                        <li><a class="aLink" href="instruction.html">Quiz</a></li>
+                        <li><a class="aLink" href="site-map.html">Site Map</a></li>
+                        <li><a class="aLink" href="queryForm.html">Query</a></li>
+                        <li><a class="aLink" href="Student_Profiles.html">About Us</a></li>
+                        <li><a class="aLink" href="tracks.html"> Songs </a></li>
+                    </ul>
+                </nav>
+                <br>
+                <br>
+                
+            </div>
+        </div>
+        <div id = "summery" class="summery hidden">
+            <form name="summery-form">
+                <span class="summerySpan">Name:</span><label class="Space">  </label><span id="sName" class="summerySpan"></span><br> <br> <br>
+                <span class="summerySpan">Email:</span><label  class="Space">  </label><span id="sEmail" class="summerySpan"></span><br> <br> <br>
+                <span class="summerySpan">Subject:</span><label class="Space"></label><span id="sSubject" class="summerySpan"></span><br> <br> <br>
+                <span class="summerySpan">Details:</span><label class="Space"></label><span id="sDetails" class="summerySpan"></span><br> <br> <br>
+                <input class="summeryButton" type="button" value="Edit" onclick="editSummery()">
+                <input class="summeryButton" type="button" value="Send" onclick="sendEmail()">
+
+
+
+            </form>
+
+
+        </div>
+
+
+        <div id="query" class="queryForm">
+            <form name="query" >
+                <span class="querySpan">Name: </span>
+                <input class="inputQuery" type="text" placeholder="Enter your name" autofocus name="username"><br><br>
+                <span class="querySpan">Email: </span>
+                <input class="inputQuery" type="text" placeholder="Enter your email" name="email"><br><br>
+                <span class="querySpan">Subject: </span>
+                <select name ="subject" class="selectQuery">
+                    <option value="empty"  ></option>
+                    <option value="delivery"  >Delivery Related</option>
+                    <option value="cost">Cost Related</option>
+                    <option value="quality" >Quality Related</option>
+                </select><br><br>
+                
+                <textarea placeholder="Please enter your detailed message" name="details" class="textareaQuery"></textarea><br><br>
+                <input type="button" value="View Query" onclick="showSummery(query,subject,summery)" class="buttonQuery inputQuery" >
+                
+
+
+
+
+            </form>
+        </div>
+        <!-- <input type="button" value="Editor" onclick="location.href='./Student_2.html'" class ="editor"> -->
+        <footer class="homefooter">
+            <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=100080002715513"><img src="../img/bwfacebook.png" alt="facebook"></a>
+                    <a href="#"><img src="../img/bwgmail.png" alt="email"></a>
+                    <a href="www.instagram.com/sharmaroobesh/"><img src="../img/bwinstagram.png" alt="instagram"></a>
+                    <a href="#"><img src="../img/bwlinkedin.png" alt="linkedin"></a>
+            </div>
+            <p class="cright">The Four O'Clock Mix<i class="far fa-copyright"></i> 2022</p>
+            <button class="btn" onclick="location.href='student02.html'">Editors</button>
+        </footer>
+
+    
+        <script>
+            function validateEmail(email) {
+
+                let atSymbol = email.indexOf("@");
+                if (atSymbol < 1) return false;
+                let dot = email.indexOf(".")
+                if(dot<1) return false;
+                return true;
+            }
+            function showSummery(query,listArray){
+
+                let qName = document.query.username.value;
+                let nlength = qName.length;
+                let qSubject = listArray[listArray.selectedIndex].innerHTML
+                let slength = qSubject.length;
+                let qDetails = document.query.details.value;
+                let dlength = qDetails.length;
+                let qEmail = document.query.email.value;
+                if (nlength < 3){
+                    alert("Please fill the name field")
+                }else if(slength < 2){
+                    alert("Please select value for subject")
+                }else if(dlength <6){
+                    alert("Please provide more details")
+
+                }else if (validateEmail(qEmail)){
+                
+                    document.getElementById("sEmail").innerHTML = document.query.email.value;
+                    document.getElementById("sName").innerHTML = document.query.username.value;
+                    document.getElementById("sDetails").innerHTML = document.query.details.value;
+                    let sub = listArray[listArray.selectedIndex].innerHTML;
+                    document.getElementById("sSubject").innerHTML = sub;
+                    
+                    let sForm  = document.getElementById("summery");
+                    sForm.classList.remove("hidden");
+                    let qForm = document.getElementById("query");
+                    qForm.classList.add("hidden");
+                
+                }else{
+                    alert("Please enter valid email address");
+
+                }
+            
+               
+    
+            }
+            function editSummery(){
+                let sForm  = document.getElementById("summery");
+                sForm.classList.add("hidden");
+                let qForm = document.getElementById("query");
+                qForm.classList.remove("hidden");
+
+            }
+            function sendEmail(){
+                 
+                    let subject = document.getElementById("sSubject").innerHTML;
+                    let body = 'Query Details: %0D%0A'+'Name: ' + document.getElementById("sName").innerHTML + '%0D%0A' +
+                    'Email: ' + document.getElementById("sEmail").innerHTML + '%0D%0A' +
+                    'Details: ' + document.getElementById("sDetails").innerHTML;
+                    let mailto = "roobeshwara.20212117@iit.ac.lk,dilusha.20212119@iit.ac.lk,gajaba.20210638@iit.ac.lk,lawanya.20212108@iit.ac.lk";
+                    window.open('mailto:' + mailto + '?subject=' + subject + '&body=' + body);
+                    window.location.href = "./HomePage.html";
+
+
+            }
+    
+        </script> 
+    </body>
+</html>

@@ -1,0 +1,87 @@
+/* styles of the sitemap */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* hiding the scrollbar */
+body {
+    overflow: hidden;
+}
+
+rect {
+    width: 15%;
+    height: 8%;
+    fill: url(#grad1);
+}
+
+text {
+    font-size: 14px;
+    fill: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+    text-anchor: middle;
+}
+
+line {
+    stroke: #6095d1;
+    stroke-width: 2;
+}
+
+#svgSitemap {
+    background-color:rgb(0, 134, 139);
+    width: 100vw;
+    height: 100vh;
+}
+
+/* gradiant 1 first point color */
+#grad1-stop1 {
+    stop-color: #41ffcc;
+    stop-opacity: 1;
+}
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    background-color:#1545c9;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 20% 1% 20%;
+}
+
+.cright {
+    padding-top: 2%;
+    font-size: small;
+    letter-spacing: 2px;
+}
+
+.btn {
+    height: 35px;
+    width: 150px;
+    padding: 8px;
+    background-color: #026670;
+    cursor: pointer;
+    font-size: medium;
+    border-radius: 5%;
+    border: none;
+    color: #ffffff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #026670;
+}
+
+
+
+
+
+

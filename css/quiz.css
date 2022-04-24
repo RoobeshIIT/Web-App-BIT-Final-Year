@@ -1,0 +1,208 @@
+
+* {
+    box-sizing: border-box;
+    font-family: item-title;
+    /* color: #777; */
+}
+.quiz_box{
+     font-size: 30px;
+     font-weight: 600;
+     display: flex;
+     /* margin-top: 20px; */
+     color: rgb(16, 36, 214);
+     text-shadow: 2px 2px #5eeb0d;
+     /* margin-bottom: 20%; */
+}
+
+.timer{
+     font-size: 20px;
+     font-weight: 600;
+     display: flex;
+}
+#mbox{
+    width: 500px;
+    overflow: hidden;
+    background: #f50101;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.836);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+#mbox h1{
+    color: rgba(0, 0, 0, 0.233);
+}
+
+.close{
+    width: 150px;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #0431fc;
+    display: inline-block;
+    border-radius: 1px solid #000;
+}
+
+ul li {
+    float: left;
+    list-style-type: none;
+    padding-left: 25px;
+
+}
+li:hover{
+
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.aLink {
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: #04194c;
+    padding: 5px;
+    border-style: groove;
+    border-radius: 0.2cm;
+    border-color: black;
+    font-style:italic;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.navigation {margin-left: 40%;
+    
+    position:sticky;
+    height: 60px;
+    border-width: 0.1cm;
+   /* border-color:rgb(140, 0, 255); #98715f*/
+    background-color: #a3775e;
+    box-shadow: 0 0 20px black;
+    border-radius: 15px;
+}
+
+.navigation>nav{
+    display:flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+.queryForm{
+
+    margin-left: 30%;
+    margin-top: 7%;
+    margin-right: 34%;
+    border: 2px;
+    border-color: rgb(251, 255, 0);
+    border-style: dotted;
+    background-color: transparent;   
+    
+}
+
+.summery{
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-right: 30%;
+    border: 2px;
+    border-color: rgb(251, 255, 0);
+    border-style: dotted;
+}
+
+#a {
+    padding: 10px;
+}
+
+.summerySpan{   
+    color: rgb(251, 255, 0);
+    font-size: 25px;
+}
+
+.summeryButton{
+    padding: 10px;
+    margin-top: 8%;
+    margin-left: 20%;
+    border-style: groove;
+    border-radius: 0.2cm;
+}
+
+.summeryButton:hover{
+    color: blueviolet;
+}
+
+.Space{
+    padding: 15px;
+}
+
+
+.logo{
+    height: 11%;
+    width: 6%;
+    border-radius: 0.2cm;
+    position: absolute;
+    margin-left: 15px;
+    border-width: 0.01cm;
+    border-color: aqua;
+    border-style: groove;
+}
+
+.hHomepage {
+    color:aqua;
+    text-align: center;
+    font-size: 50px;
+    margin-right: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px #0f0f0f;
+}
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    background-color: #1545c9;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 20% 1% 20%;
+}
+
+.cright {
+    padding-top: 2%;
+    font-size: small;
+    letter-spacing: 2px;
+}
+
+.button {
+    height: 35px;
+    width: 150px;
+    padding: 8px;
+    background-color: #026670;
+    cursor: pointer;
+    font-size: medium;
+    border-radius: 5%;
+    border: none;
+    color: #ffffff;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #026670;
+}
+
+

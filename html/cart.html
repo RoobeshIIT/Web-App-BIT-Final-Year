@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shop Online</title>
+     <meta charset = 'UTF-8'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../css/cart.css"> 
+    <link rel="stylesheet" href="../css/style.css"> 
+
+</head>
+<body>
+    <img src="../img/logo.jpeg"  alt="image" class="logo">
+    <h1 class="hHomepage">Musix AMP</h1>
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a class="aLink" href="HomePage.html">Home</a></li>
+                <li><a class="aLink" href="cart.html">Product</a></li>
+                <li><a class="aLink" href="instruction.html">Quiz</a></li>
+                <li><a class="aLink" href="site-map.html">Site Map</a></li>
+                <li><a class="aLink" href="queryForm.html">Query</a></li>
+                <li><a class="aLink" href="Student_Profiles.html">About Us</a></li>
+                <li><a class="aLink" href="tracks.html"> Songs </a></li>
+            </ul>
+            <br>
+            <br>
+        </nav>
+    </div>
+
+        <section class="container">
+
+			<h2 class="section-header">BUY INSTRUMENTS</h2>
+            <div class="items">
+           
+                <div class="item">
+                    <img class="item-image" src="../img/vio.jpg" alt="violin">
+                    <p class="item-title" id="item-title1">Yamaha-violin-yev104-natural</p>
+                    <div class="item-details">
+                      <label>Rs</label>
+                      <p class="item-price" id="item-price1">1000.00</p>
+                      <label for="qty1">Quantity</label>
+                      <input type="number" id="qty1" min="0">
+                      <p>A next-generation violin that combines innovative beauty with solid live-performance features and potential.</p>
+                    <button class="item-button" onclick="productdel('1')">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img class="item-image" src="../img/bongo.jpg" alt="Denim">
+                    <p class="item-title" id="item-title2">Latin Percussion LP Aspire Wood Bongos</p>
+                    <div class="item-details">
+                      <label>Rs</label>
+                       <p class="item-price" id="item-price2">300.00</p>
+                       <label for="qty2">Quantity</label>
+                      <input type="number" id="qty2" min="0">
+                       <p>LP Aspire Wood Bongos are ideal for students, hobbyists and aspiring musicians. They provide great value at an affordable price.</p>
+                    <button class="item-button" onclick="productdel('2')">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img class="item-image" src="../img/trumptet.jpg" alt="Denim Jeans">
+                    <p class="item-title" id="item-title3">Yamaha YTR2330 Student Trumpet</p>
+                    <div class="item-details">
+                      <label>Rs</label>
+                      <p class="item-price" id="item-price3">700.00</p>
+                      <label for="qty3">Quantity</label>
+                      <input type="number" id="qty3" min="0">
+                      <p>The instrument features a water key on the third valve and the slide saddle on the first valve, previously only found on high-end models.</p>
+                    <button class="item-button" onclick="productdel('3')">Add to Cart</button>
+                    </div>
+                </div>
+                </div>
+                
+                    <h2 class="section-header">BUY ALBUMS</h2>
+                     <div class="items">
+                
+                <div class="item">
+                    <img class="item-image" src="../img/music.jpg" alt="Denim Jeans">
+                    <p class="item-title" id="item-title4">Taylor Swift - Evermore PVG</p>
+                    <div class="item-details">
+                        <label>Rs</label>
+                       <p class="item-price" id="item-price4">50.00</p>
+                       <label for="qty4">Quantity</label>
+                      <input type="number" id="qty4" min="0">
+                       <p>17 songs for piano, voice and guitar from the 9th studio album by contemporary music superstar, Taylor Swift.</p>
+                    <button class="item-button" onclick="productdel('4')">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img class="item-image" src="../img/music2.jpg" alt="Denim Jeans">
+                    <p class="item-title" id="item-title5">Ludovico Einaudi - The Piano Collection Vol 1</p>
+                    <div class="item-details">
+                        <label>Rs</label>
+                       <p class="item-price" id="item-price5">40.00</p>
+                       <label for="qty5">Quantity</label>
+                      <input type="number" id="qty5" min="0">
+                       <p>The very best of this ground-breaking composer's piano works, specially selected from each of his albums for you to play.</p>
+                    <button class="item-button" onclick="productdel('5')">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img class="item-image" src="../img/music3.jpg" alt="Denim Jeans">
+                    <p class="item-title" id="item-title6">Norah Jones - Sheet Music Collection</p>
+                    <div class="item-details">
+                        <label>Rs</label>
+                       <p class="item-price" id="item-price6">60.00</p>
+                       <label for="qty6">Quantity</label>
+                      <input type="number" id="qty6" min="0">
+                       <p>25 of the most-loved songs from this 9-time Grammy Award-winner's career arranged for piano, voice and guitar.</p>
+                    <button class="item-button" onclick="productdel('6')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+				 
+        
+        <section class="content">
+          
+      		 <!-- <div class="content"> -->
+                   
+                <div class="pdetails">
+                    <p>Customer Details</p>
+                </div>
+        
+               <label class="invoice-label" >First name:</label>
+               <input class="invoice-text" type="text" name="fname" id="fname" placeholder="First Name"><br><br>
+        
+               <label class="invoice-label">Last Name:</label>
+               <input type="text" class="invoice-text" name="lname" id="lname" placeholder="Last Name"><br><br>
+        
+               <label class="invoice-label">Email:</label>
+               <input type="email"  class="invoice-text" name="email" id="email" placeholder="Email Address"><br><br>
+               
+               <label class="invoice-label">Contact No:</label>
+               <input type="tel"  class="invoice-text" name="cntact" id="cntact" placeholder="Contact Number"><br><br>
+               
+               <label class="invoice-label">Delivery Address:</label>
+               <input type="text" class="invoice-text" name="address" id="address" placeholder="Delivery Address"><br><br>
+              
+               <label class="invoice-label">Card Holder:</label>
+               <input type="text" class="invoice-text" name="crdhld" id="crdhld" placeholder="Card Holder"><br><br>
+              
+               <label class="invoice-label">Card Number:</label>
+               <input type="text" class="invoice-text" name="crdnum" id="crdnum" placeholder="Card Number"><br><br>
+        
+	           
+               <div>
+                   <button class="inv-butn" onClick="validation()" >Place Order</button>
+         	   </div>
+
+                <div id="invoice"></div>
+      
+             <!-- </div>
+             -->
+        </section>
+        
+        <footer>
+            <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=100008470905871"><img src="../img/bwfacebook.png" alt="facebook"></a>
+                    <a href="#"><img src="../img/bwgmail.png" alt="email"></a>
+                    <a href="https://www.instagram.com/dilshhha.a/"><img src="../img/bwinstagram.png" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/dilusha-alwis?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeFYJJ2T7RfiCM6nR09O%2ByA%3D%3D"><img src="../img/bwlinkedin.png" alt="linkedin"></a>
+            </div>
+            <p class="cright">The Four O'Clock Mix<i class="far fa-copyright"></i> 2022</p>
+            <button class="btn" onclick="location.href='student01.html'">Editors</button>
+        </footer>
+
+     <script src="../js/cart.js"></script>
+ </body>  
+</html>

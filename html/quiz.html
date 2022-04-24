@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Start Quiz</title>
+        <link rel="stylesheet" href="../css/quiz.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- <link rel="stylesheet" href="../cw2/style_instrusction.css"> -->
+        
+        <style>
+                body { 
+                        background-image: url("../img/quiz.jpg");
+                        color:rgb(0, 10, 10);
+                        font-size:90%;
+                        font-weight: 900;
+                        position: static;
+                }
+                .body   {
+                         background-image: url(CW\ background.jpg);
+                        }
+        </style>
+</head>
+
+<body>
+        <img src="../img/logo.jpeg" class="logo">
+        <h1 class="hHomepage">Musix AMP</h1>
+        <div class="navigation">
+                <nav>
+                        <ul>
+                                <li><a class="aLink" href="HomePage.html">Home</a></li>
+                                <li><a class="aLink" href="cart.html">Product</a></li>
+                                <li><a class="aLink" href="#">Quiz</a></li>
+                                <li><a class="aLink" href="site-map.html">Site Map</a></li>
+                                <li><a class="aLink" href="queryForm.html">Query</a></li>
+                                <li><a class="aLink" href="Student_Profiles.html">About Us</a></li>
+                                <li><a class="aLink" href="tracks.html"> Songs </a></li>
+                        </ul>
+                        <br>
+                        <br>
+                </nav>
+        </div>
+
+        <div id="mbox">
+                <div id="results"></div>
+                <button class="close" onclick="pop()">Close</button>
+        </div>
+        <div class="quiz_box" id="quiz">
+                <header >
+                        <div class="title">Go go go rock &#9734
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="timer">
+                                <div class="time_left">Hurry your time is: <span id="timer-time">60</span> </div>
+                                <div class="timer_sec"> / 60 sec</div>
+                        </div>
+                        <div class="time_line"></div>
+                </header>
+
+                <section>
+                        <div class="scroll-div"></div>
+                </section>
+        </div> <br>
+
+        <div>
+                <button id="start" onclick="go()">Start</button>
+        </div>
+        <div id="ques" style="display:none">
+                <h3><U>SINGERS</U></h3>
+                <p> Q01) Which former One Direction member released 'Watermelon Sugar' and 'Adore You'? </p>
+                <input type="radio" id="1a" name="singer" value="harry styles">
+                  <label for="harry styles">Harry Style</label><br>
+                <input type="radio" id="1b" name="singer" value="zayn malik">
+                  <label for="zayn malik">Zayn Malik</label><br>
+                <input type="radio" id="1c" name="singer" value="naill horen">
+                  <label for="naill horen">Naill Horen</label><br>
+                <input type="radio" id="1d" name="singer" value="louis tomlinson">
+                  <label for="louis tomlinson">Louis Tomlinson</label><br>
+
+
+                <p> Q02) Who famously wore a dress made of meat to the MTV Awards? </p>
+                <input type="radio" id="2a" name="artist" value="miley cyrus">
+                  <label for="miley cyrus">Miley Cyrus</label><br>
+                <input type="radio" id="2b" name="artist" value="camila cabello">
+                  <label for="camila cabello">Camila Cabello</label><br>
+                <input type="radio" id="2c" name="artist" value="lady gaga">
+                  <label for="lady gaga">Lady Gaga</label><br>
+                <input type="radio" id="2d" name="artist" value="shakira">
+                  <label for="shakira">Shakira</label><br>
+
+                <p> Q03) Which mathematical symbol was the title of Ed Sheeran’s first album in 2011? </p>
+                <input type="radio" id="3a" name="sign" value="/">
+                  <label for="/">/</label><br>
+                <input type="radio" id="3b" name="sign" value="-">
+                  <label for="-">-</label><br>
+                <input type="radio" id="3c" name="sign" value="*">
+                  <label for="*">*</label><br>
+                <input type="radio" id="3d" name="sign" value="+">
+                  <label for="+">+</label><br>
+
+                <p> Q04) Who is the youngest singer to win four major categories at the Grammy Awards? </p>
+                <input type="radio" id="4a" name="youngest singer" value="billie eilish">
+                  <label for="billie eilish">Billie Eilish</label><br>
+                <input type="radio" id="4b" name="youngest singer" value="taylor swift">
+                  <label for="taylor swift">Taylor Swift</label><br>
+                <input type="radio" id="4c" name="youngest singer" value="selena gomez">
+                  <label for="selena gomez">Selena Gomez</label><br>
+                <input type="radio" id="4d" name="youngest singer" value="justin bieber">
+                  <label for="justin bieber">Justin Bieber</label><br>
+
+                <p> Q05) Which band recorded the theme song to "Friends"? </p>
+                <input type="radio" id="5a" name="band" value="beatles">
+                  <label for="beatles">Beatles</label><br>
+                <input type="radio" id="5b" name="band" value="the rembrandts">
+                  <label for="the rembrandts">The Rembrandts</label><br>
+                <input type="radio" id="5c" name="band" value="one direction">
+                  <label for="one direction">One Direction</label><br>
+                <input type="radio" id="5d name=" band" value="pink flyod">
+                  <label for="pink flyod">Pink Flyod</label><br>
+
+                <h3><U>MUSICAL INSTRUMENT</U></h3>
+
+                <p> Q06) Which woodwind instrument introduces the highest notes?</p>
+                <input type="radio" id="v1" name="airborne" value="triangle">
+                  <label for="triangle">Triangle</label><br>
+                <input type="radio" id="v2" name="airborne" value="french horn">
+                  <label for="french horn">French Horn</label><br>
+                <input type="radio" id="v3" name="airborne" value="bassoon">
+                  <label for="bassoon">Bassoon</label><br>
+                <input type="radio" id="v4" name="airborne" value="piccolo">
+                  <label for="piccolo">Piccolo</label><br>
+
+                <p> Q07) Which is NOT a brass instrument from the following?</p>
+                <input type="radio" id="w1" name="not brass" value="flute">
+                  <label for="flute">Flute</label><br>
+                <input type="radio" id="w2" name="not brass" value="tuba">
+                  <label for="tuba">Tuba</label><br>
+                <input type="radio" id="w3" name="not brass" value="cornet">
+                  <label for="cornet">Cornet</label><br>
+                <input type="radio" id="w4" name="not brass" value="saxophone">
+                  <label for="saxophone">Saxophone</label><br>
+
+                <p> Q08) From which metal is the modern flute usually made out from?</p>
+                <input type="radio" id="x1" name="metal" value="lead">
+                <label for="lead">Lead</label><br>
+                <input type="radio" id="x2" name="metal" value="gold">
+                <label for="gold">Gold</label><br>
+                <input type="radio" id="x3" name="metal" value="silver">
+                <label for="silver">Silver</label><br>
+                <input type="radio" id="x4" name="metal" value="copper">
+                <label for="copper">Copper</label><br>
+
+                <p> Q09) Which instrument would be used in Spanish flamenco?</p>
+                <input type="radio" id="y1" name="instrument" value="trombone">
+                  <label for="trombone">Trombone</label><br>
+                <input type="radio" id="y2" name="instrument" value="cello">
+                  <label for="cello">Cello</label><br>
+                <input type="radio" id="y3" name="instrument" value="guitar">
+                  <label for="guitar">Guitar</label><br>
+                <input type="radio" id="y4" name="instrument" value="oboe">
+                  <label for="oboe">Oboe</label><br>
+
+                <p> Q10) The excerpt is an example of:</p>
+                <input type="radio" id="z1" name="excerpt" value="crescendo">
+                  <label for="crescendo">Crescendo</label><br>
+                <input type="radio" id="z2" name="excerpt" value="decrescendo">
+                  <label for="decrescendo">Decrescendo</label><br>
+                <input type="radio" id="z3" name="excerpt" value="accelerando">
+                  <label for="accelerando">Accelerando</label><br>
+                <input type="radio" id="z4" name="excerpt" value="ritardando">
+                  <label for="ritardando">Ritardando</label><br>
+                <!--Submit answer button-->
+                <p><button onclick="quiz()"> Submit
+                        </button>
+                </p>
+        </div>
+        <script src="../cw2/quiz_js.js"></script>
+        <br/><br/><br/><br/><br/><br/><br/>
+        
+        <footer>
+                <div class="social-media">
+                        <a href="https://www.facebook.com/profile.php?id=100078012167872"><img src="../img/bwfacebook.png" alt="facebook"></a>
+                        <a href="#"><img src="../img/bwgmail.png" alt="email"></a>
+                        <a href="https://www.instagram.com/iam_lawanya_/"><img src="../img/bwinstagram.png" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/in/lawanya-gunawardena-8362a9222/"><img src="../img/bwlinkedin.png" alt="linkedin"></a>
+                </div>
+                <p class="cright">The Four O'Clock Mix<i class="far fa-copyright"></i> 2022</p>
+                <button class="button" onclick="location.href='student03.html'">Editors</button>
+            </footer>
+        
+<script src="../js/quiz_js.js"></script>
+</body>
+
+</html>   

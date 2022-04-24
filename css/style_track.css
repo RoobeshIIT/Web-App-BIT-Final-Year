@@ -1,0 +1,164 @@
+body {
+    background-color: rgba(73, 91, 255, 0.863);
+    font-family:  Arial, Helvetica, sans-serif;
+  }
+
+ul li {
+    float: left;
+    list-style-type: none;
+    padding-left: 25px;
+
+}
+li:hover{
+
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.aLink {
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: #04194c;
+    padding: 5px;
+    border-style: groove;
+    border-radius: 0.2cm;
+    border-color: black;
+    font-style:italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {margin-left: 30%;
+    
+    position:sticky;
+    height: 60px;
+    border-width: 0.1cm;
+   /* border-color:rgb(140, 0, 255); #98715f*/
+    background-color: #a3775e;
+    box-shadow: 0 0 20px black;
+    border-radius: 15px;
+}
+
+.navigation>nav{
+    display:flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.body{
+    background-image: url(CW\ background.jpg);
+}
+
+.hidden{
+    display: none;
+}
+
+.queryForm{
+
+    margin-left: 30%;
+    margin-top: 7%;
+    margin-right: 34%;
+    border: 2px;
+    border-color: rgb(251, 255, 0);
+    border-style: dotted;
+    background-color: transparent;
+    
+    
+}
+.summery{
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-right: 30%;
+    border: 2px;
+    border-color: rgb(251, 255, 0);
+    border-style: dotted;
+}
+#a {
+    padding: 10px;
+}
+.summerySpan{
+    
+    color: rgb(251, 255, 0);
+    font-size: 25px;
+    
+
+
+}
+.summeryButton{
+    padding: 10px;
+    margin-top: 8%;
+    margin-left: 20%;
+    border-style: groove;
+    border-radius: 0.2cm;
+
+}
+.summeryButton:hover{
+    color: blueviolet;
+
+}
+.Space{
+    padding: 15px;
+}
+.logo{
+    height: 11%;
+    width: 6%;
+    border-radius: 0.2cm;
+    position: absolute;
+    margin-left: 15px;
+    border-width: 0.01cm;
+    border-color: aqua;
+    border-style: groove;
+}
+
+.hHomepage {
+    color:aqua;
+    text-align: center;
+    font-size: 50px;
+    margin-right: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px #0f0f0f;
+}
+.foot {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    background-color: #1545c9;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 20% 1% 20%;
+}
+
+.cright {
+    padding-top: 2%;
+    font-size: small;
+    letter-spacing: 2px;
+}
+
+.button {padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 3px solid  #A97155;
+    border-radius: 9px;
+    background-color:white ;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+
+.button:hover{
+    background-color:#DEB887;
+}
+
+.img_g{
+    width:400px;
+    height: 300px;
+}
+
+.img_e{
+    width : 300px;
+    height : 300px;
+}
